@@ -1,0 +1,164 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    scroll-behavior: smooth;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 30px;
+    background-color:#d2939c;
+    padding: 0;
+    margin: 0;  
+}
+
+.center
+{
+    background-image: url('./zdj/flowers.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.menu
+{
+    position: sticky;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    margin-top: 30px;
+    background-color: aliceblue;
+    height: 100px;
+    width: 90%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_nav
+{
+    display: flex;
+}
+
+.menu_nav a
+{
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+
+.menu_nav a:hover
+{
+    color: rgba(0, 0, 0, 0.7);
+    transform: scale(1.1);
+}
+
+.about >div
+{ 
+    width: 80%;
+    text-align: justify;
+}
+
+.about
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex; 
+    justify-content: center;
+    
+}
+
+.section1
+{
+    width: 80%;
+    background-color:#453852;
+    padding: 60px;
+    display: flex;
+}
+
+.gallery
+{
+    padding: 30px;
+    display: flex; 
+    justify-content: center;
+}   
+
+.photo_container >img
+{
+    width: 100%;
+    height: auto;
+}
+
+.contact
+{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact >div a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#fbbox:hover > img 
+{
+    animation: animate 1.5s linear;
+}
+#instabox:hover >img
+{
+    animation: animate 1.5s linear;
+}
+#ytbox:hover >img
+{
+    animation: animate 1.5s linear;
+}
+#twitbox:hover >img
+{
+    animation: animate 1.5s linear;
+}
+#pinbox:hover >img
+{
+    animation: animate 1.5s linear;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+    10%
+    {
+        transform: translateY(-15px);
+    }
+    15%
+    {
+        transform: translateY(0px);
+    }
+    25%
+    {
+        transform: translateY(-8px);
+    }
+    30%
+    {
+        transform: translateY(0px);
+    }
+    35%
+    {
+        transform: translateY(-5px);
+    }
+    45%
+    {
+        transform: translateY(0px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
