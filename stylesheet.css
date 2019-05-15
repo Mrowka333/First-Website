@@ -212,11 +212,12 @@ body
     .center
     {
         overflow: hidden;
+        background-position: center;
     }
 
     .menu
     {
-        margin-top: 0;
+     
         height: 100px;
         width: 100%;
        
@@ -232,28 +233,40 @@ body
         padding: 0;
         width: 100%;
         display: block;
+        margin-bottom: 50px;
     }
 
     .sect1
     { 
         padding: 20px;
         width: 100%;
-        display: block;
+        flex-direction: column;
     }
 
     .sect2
     { 
         padding: 20px;
         width: 100%;
-        display: block;
+        flex-direction: column;
     }
 
     .sect3
     {      
         padding: 20px;
         width: 100%;
-        display: block;
+        flex-direction: column;
     }
+
+    .buttonleft
+{
+    height: 50px;
+}
+
+.buttonright
+{
+    height: 50px;
+}
+
 
     .photo_container >img
     {

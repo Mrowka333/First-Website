@@ -5,6 +5,7 @@ function plusDivs(n) {
     showDivs(slideIndex += n);
 }
 
+
 function showDivs(n) {
     var i;
     let slides = document.querySelector('.slides').children
