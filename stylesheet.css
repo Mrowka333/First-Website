@@ -26,9 +26,6 @@ body
 
 .menu
 {
-    position: sticky;
-    padding-left: 20px;
-    padding-right: 20px;
     align-items: center;
     margin-top: 30px;
     background-color: aliceblue;
@@ -36,25 +33,19 @@ body
     width: 90%;
     border-radius: 25px;
     display: flex;
-    justify-content: space-between;
-}
-
-.menu_nav
-{
-    display: flex;
+    justify-content: center;
 }
 
 .menu_nav a
 {
     text-decoration: none;
-    padding: 20px;
+    padding: 50px;
     color: black;
 }
 
 .menu_nav a:hover
 {
-    color: rgba(0, 0, 0, 0.7);
-    transform: scale(1.1);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .about >div
@@ -71,27 +62,75 @@ body
     justify-content: center;
     
 }
+.gallery
+{
+    align-items: center;
+    display: flex; 
+    align-self: center;
+}  
 
-.section1
+.slides
+{
+    display: flex;
+    justify-content: center;
+}
+
+.sect1
 {
     width: 80%;
     background-color:#453852;
-    padding: 60px;
+    padding: 40px 0 40px 50px;
     display: flex;
 }
 
-.gallery
+.sect2
 {
-    padding: 30px;
-    display: flex; 
+    width: 80%;
+    background-color:#D99FAE;
+    padding: 40px 0 40px 50px;
+    display: none;
+}
+
+.sect3
+{
+    width: 80%;
+    background-color:#BEB0A7;
+    padding: 40px 0 40px 50px;
+    display: none;
+}
+
+.photo_container
+{
+    display: flex;
     justify-content: center;
-}   
+    align-items: center;
+    padding-left: 20px;
+}
 
 .photo_container >img
 {
-    width: 100%;
+    width: 90%;
     height: auto;
 }
+
+.buttonleft
+{
+    height: 100%;
+    padding: 10px 20px;
+    position: absolute;
+    opacity: 0.8;
+    left: 0;
+}
+
+.buttonright
+{
+    height: 100%;
+    padding: 10px 20px;
+    position: absolute;
+    opacity: 0.8;
+    right: 0;
+}
+
 
 .contact
 {
@@ -160,5 +199,65 @@ body
     100%
     {
         transform: translateY(0px);
+    }
+}
+
+@media (max-width: 550px)
+{
+    body
+    {
+        font-size: 20px;
+    }
+
+    .center
+    {
+        overflow: hidden;
+    }
+
+    .menu
+    {
+        margin-top: 0;
+        height: 100px;
+        width: 100%;
+       
+    }
+
+    .menu_nav a 
+    {
+        padding: 10px;
+    }
+
+    .gallery
+    {
+        padding: 0;
+        width: 100%;
+        display: block;
+    }
+
+    .sect1
+    { 
+        padding: 20px;
+        width: 100%;
+        display: block;
+    }
+
+    .sect2
+    { 
+        padding: 20px;
+        width: 100%;
+        display: block;
+    }
+
+    .sect3
+    {      
+        padding: 20px;
+        width: 100%;
+        display: block;
+    }
+
+    .photo_container >img
+    {
+        width: 90%;
+        height: auto;
     }
 }
